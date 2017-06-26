@@ -84,22 +84,16 @@
 
 
 
-<meta name="description" content="python pyquery 学习手册
-安装与使用
-pyquery: 一个为 python 定制的 jquery-like 库">
+<meta name="description" content="Python 实现二叉树的遍历，前序、中序、后序Python 实现图的遍历，广度优先搜索、深度优先搜索">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python Pyquery 学习手册">
-<meta property="og:url" content="http://yoursite.com/2017/01/13/python-pyquery/index.html">
+<meta property="og:title" content="树的遍历图的遍历 in Python">
+<meta property="og:url" content="http://yoursite.com/2017/06/26/tree-and-graph/index.html">
 <meta property="og:site_name" content="种一棵树">
-<meta property="og:description" content="python pyquery 学习手册
-安装与使用
-pyquery: 一个为 python 定制的 jquery-like 库">
-<meta property="og:updated_time" content="2017-01-16T03:46:23.000Z">
+<meta property="og:description" content="Python 实现二叉树的遍历，前序、中序、后序Python 实现图的遍历，广度优先搜索、深度优先搜索">
+<meta property="og:updated_time" content="2017-06-26T14:28:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python Pyquery 学习手册">
-<meta name="twitter:description" content="python pyquery 学习手册
-安装与使用
-pyquery: 一个为 python 定制的 jquery-like 库">
+<meta name="twitter:title" content="树的遍历图的遍历 in Python">
+<meta name="twitter:description" content="Python 实现二叉树的遍历，前序、中序、后序Python 实现图的遍历，广度优先搜索、深度优先搜索">
 
 
 
@@ -117,7 +111,7 @@ pyquery: 一个为 python 定制的 jquery-like 库">
   };
 </script>
 
-  <title> Python Pyquery 学习手册 | 种一棵树 </title>
+  <title> 树的遍历图的遍历 in Python | 种一棵树 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -246,7 +240,7 @@ pyquery: 一个为 python 定制的 jquery-like 库">
             
             
               
-                Python Pyquery 学习手册
+                树的遍历图的遍历 in Python
               
             
           </h1>
@@ -258,8 +252,8 @@ pyquery: 一个为 python 定制的 jquery-like 库">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-13T10:50:37+08:00" content="2017-01-13">
-              2017-01-13
+            <time itemprop="dateCreated" datetime="2017-06-26T22:14:29+08:00" content="2017-06-26">
+              2017-06-26
             </time>
           </span>
 
@@ -269,8 +263,8 @@ pyquery: 一个为 python 定制的 jquery-like 库">
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2017/01/13/python-pyquery/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/13/python-pyquery/" itemprop="commentsCount"></span>
+                <a href="/2017/06/26/tree-and-graph/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/06/26/tree-and-graph/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -280,7 +274,7 @@ pyquery: 一个为 python 定制的 jquery-like 库">
 
           
           
-             <span id="/2017/01/13/python-pyquery/" class="leancloud_visitors" data-flag-title="Python Pyquery 学习手册">
+             <span id="/2017/06/26/tree-and-graph/" class="leancloud_visitors" data-flag-title="树的遍历图的遍历 in Python">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -302,26 +296,24 @@ pyquery: 一个为 python 定制的 jquery-like 库">
       
 
       
-        <p>python pyquery 学习手册</p>
-<p>安装与使用</p>
-<p>pyquery: 一个为 python 定制的 jquery-like 库</p>
+        <p>Python 实现二叉树的遍历，前序、中序、后序<br>Python 实现图的遍历，广度优先搜索、深度优先搜索</p>
 <a id="more"></a>
-<p><strong>简介 pyquery: a jquery-like library for python</strong></p>
-<blockquote>
-<p>pyquery allows you to make jquery queries on xml documents. The API is as much as possible the similar to jquery. pyquery uses lxml for fast xml and html manipulation.</p>
-</blockquote>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><blockquote>
-<p>pip install requests    </p>
-</blockquote>
-<p>pypi源速度过慢的情况下，可以考虑切换至国内源<a href="https://www.baidu.com/s?wd=pip%20%E5%9B%BD%E5%86%85%E6%BA%90&amp;rsv_spt=1&amp;rsv_iqid=0xfbd5125500003f0a&amp;issp=1&amp;f=8&amp;rsv_bp=0&amp;rsv_idx=2&amp;ie=utf-8&amp;tn=baiduhome_pg&amp;rsv_enter=1&amp;rsv_sug3=15&amp;rsv_sug1=22&amp;rsv_sug7=100" target="_blank" rel="external">百度一下解决方案</a><br>例子：使用清华源    </p>
-<blockquote>
-<p>sudo -H pip install requests -i <a href="https://pypi.tuna.tsinghua.edu.cn/simple/" target="_blank" rel="external">https://pypi.tuna.tsinghua.edu.cn/simple/</a> –trusted-host pypi.tuna.tsinghua.edu.cn</p>
-</blockquote>
-<h2 id="QuickStart"><a href="#QuickStart" class="headerlink" title="QuickStart"></a>QuickStart</h2><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"># 定义一段 html</div><div class="line">html = &quot;&quot;&quot;</div><div class="line">&lt;html&gt;&lt;head&gt;&lt;title&gt;The Dormouse&apos;s story&lt;/title&gt;&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;p class=&quot;title&quot; name=&quot;dromouse&quot;&gt;&lt;b&gt;The Dormouse&apos;s story&lt;/b&gt;&lt;/p&gt;</div><div class="line">&lt;p class=&quot;story&quot;&gt;Once upon a time there were three little sisters; and their names were</div><div class="line">&lt;a href=&quot;http://example.com/elsie&quot; class=&quot;sister&quot; id=&quot;link1&quot;&gt;&lt;!-- Elsie --&gt;&lt;/a&gt;,</div><div class="line">&lt;a href=&quot;http://example.com/lacie&quot; class=&quot;sister&quot; id=&quot;link2&quot;&gt;Lacie&lt;/a&gt; and</div><div class="line">&lt;a href=&quot;http://example.com/tillie&quot; class=&quot;sister&quot; id=&quot;link3&quot;&gt;Tillie&lt;/a&gt;;</div><div class="line">and they lived at the bottom of a well.&lt;/p&gt;</div><div class="line">&lt;p class=&quot;story&quot;&gt;...&lt;/p&gt;</div><div class="line">&lt;/body&gt;&lt;html&gt;</div><div class="line">&quot;&quot;&quot;</div></pre></td></tr></table></figure>
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from pyquery import PyQuery as pq</div><div class="line">&gt;&gt;&gt; html_pq = pq(html)</div><div class="line">&gt;&gt;&gt; # 查找某个标签，以p为例</div><div class="line">&gt;&gt;&gt; p = html_pq(&quot;p&quot;)</div><div class="line">&gt;&gt;&gt; p</div><div class="line">&gt;&gt;&gt; [&lt;p.title&gt;, &lt;p.story&gt;, &lt;p.story&gt;]</div><div class="line">&gt;&gt;&gt; # 返回依然是PyQuery对象，可以继续操作</div><div class="line">&gt;&gt;&gt; # 根据css类查找相应标签</div><div class="line">&gt;&gt;&gt; p(&quot;.title&quot;)</div><div class="line">&gt;&gt;&gt; [&lt;p.title&gt;]</div><div class="line">&gt;&gt;&gt; # 获取标签html内容</div><div class="line">&gt;&gt;&gt; p(&quot;.title&quot;).html()</div><div class="line">&gt;&gt;&gt; &quot;&lt;b&gt;The Dormouse&apos;s story&lt;/b&gt;&quot;</div><div class="line">&gt;&gt;&gt; # 获取标签文本内容</div><div class="line">&gt;&gt;&gt; p(&quot;.title&quot;).text()</div><div class="line">&gt;&gt;&gt; &quot;The Dormouse&apos;s story&quot;</div><div class="line">&gt;&gt;&gt; # 根据id查找相应标签</div><div class="line">&gt;&gt;&gt; a = html_pq(&quot;a&quot;)</div><div class="line">&gt;&gt;&gt; [&lt;a#link1.sister&gt;, &lt;a#link2.sister&gt;, &lt;a#link3.sister&gt;]</div><div class="line">&gt;&gt;&gt; a(&quot;#link1&quot;).html()</div><div class="line">&gt;&gt;&gt; &apos;&lt;!-- Elsie --&gt;&apos;</div><div class="line">&gt;&gt;&gt; # 可以将查找条件写在一起，结果相同</div><div class="line">&gt;&gt;&gt; html_pq(&quot;a#link1&quot;).html()</div><div class="line">&gt;&gt;&gt; &apos;&lt;!-- Elsie --&gt;&apos;</div></pre></td></tr></table></figure>
-<h2 id="获取属性"><a href="#获取属性" class="headerlink" title="获取属性"></a>获取属性</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from pyquery import PyQuery as pq</div><div class="line">&gt;&gt;&gt; html_pq = pq(html)</div><div class="line">&gt;&gt;&gt; # 根据属性查找标签</div><div class="line">&gt;&gt;&gt; html_pq(&quot;p[name=&apos;dromouse&apos;]&quot;)</div><div class="line">&gt;&gt;&gt; [&lt;p.title&gt;]</div><div class="line">&gt;&gt;&gt; # 获取标签属性</div><div class="line">&gt;&gt;&gt; p_test = pq(&apos;&lt;p id=&quot;hello&quot; class=&quot;hello&quot;&gt;&lt;/p&gt;&apos;)(&apos;p&apos;)</div><div class="line">&gt;&gt;&gt; p_test.attr(&apos;id&apos;)</div><div class="line">&gt;&gt;&gt; &apos;hello&apos;</div><div class="line">&gt;&gt;&gt; # 修改标签属性</div><div class="line">&gt;&gt;&gt; p_test.attr(&quot;id&quot;, &quot;change&quot;)</div><div class="line">&gt;&gt;&gt; [&lt;p#change.hello&gt;]</div><div class="line">&gt;&gt;&gt; # 同样可采用下列方式修改属性</div><div class="line">&gt;&gt;&gt; p_test.attr.id = &quot;change&quot;</div><div class="line">&gt;&gt;&gt; p_test.attr[&quot;id&quot;] = &quot;change_again&quot;</div><div class="line">&gt;&gt;&gt; # 修改类属性时，用class_而不是class，class为python关键字</div><div class="line">&gt;&gt;&gt; p_test.attr.class_ = &quot;change_class&quot;</div><div class="line">&gt;&gt;&gt; p_test</div><div class="line">&gt;&gt;&gt; [&lt;p#change_again.change_class&gt;]</div><div class="line">&gt;&gt;&gt; # 同时修改多个属性</div><div class="line">&gt;&gt;&gt; p_test.attr(id=&apos;change_id&apos;, class_=&apos;change_class&apos;)</div><div class="line">&gt;&gt;&gt; [&lt;p#change_id.change_class&gt;]</div></pre></td></tr></table></figure>
-<h2 id="操作CSS"><a href="#操作CSS" class="headerlink" title="操作CSS"></a>操作CSS</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; from pyquery import PyQuery as pq</div><div class="line">&gt;&gt;&gt; p = pq(&apos;&lt;p id=&quot;hello&quot; class=&quot;hello&quot;&gt;&lt;/p&gt;&apos;)(&apos;p&apos;)</div><div class="line">&gt;&gt;&gt; # 添加新CSS类</div><div class="line">&gt;&gt;&gt; p.addClass(&quot;newClass&quot;)</div><div class="line">&gt;&gt;&gt; [&lt;p#hello.hello.newClass&gt;]</div><div class="line">&gt;&gt;&gt; # 反转指定CCS类</div><div class="line">&gt;&gt;&gt; p.toggleClass(&quot;newClass&quot;)</div><div class="line">&gt;&gt;&gt; [&lt;p#hello.hello&gt;]</div><div class="line">&gt;&gt;&gt; p.toggleClass(&quot;newClass&quot;)</div><div class="line">&gt;&gt;&gt; [&lt;p#hello.hello.newClass&gt;]</div><div class="line">&gt;&gt;&gt; # 移除指定CSS类</div><div class="line">&gt;&gt;&gt; p.removeClass(&quot;newClass&quot;)</div><div class="line">&gt;&gt;&gt; [&lt;p#hello.hello&gt;]</div><div class="line">&gt;&gt;&gt; # 修改指定ccs属性</div><div class="line">&gt;&gt;&gt; p.css(&quot;font-size&quot;, &quot;15px&quot;)</div><div class="line">&gt;&gt;&gt; p.css(&#123;&quot;font-size&quot;: &quot;15px&quot;&#125;) # 等价</div><div class="line">&gt;&gt;&gt; # 获取标签样式</div><div class="line">&gt;&gt;&gt; p.attr(&quot;style&quot;)</div><div class="line">&gt;&gt;&gt; &apos;font-size: 15px&apos;</div><div class="line">&gt;&gt;&gt; # 可以用pythonic方式完成同样工作</div><div class="line">&gt;&gt;&gt; p.css.font_size = &quot;15px&quot;</div><div class="line">&gt;&gt;&gt; p.css[&apos;font-size&apos;] = &quot;15px&quot;</div><div class="line">&gt;&gt;&gt; p.css(font_size=&quot;15px&quot;)</div><div class="line">&gt;&gt;&gt; p.css = &#123;&quot;font-size&quot;: &quot;15px&quot;&#125;</div></pre></td></tr></table></figure>
-
+<p>一些基本定义与思路，你可能需要知道</p>
+<p><a href="https://zh.wikipedia.org/wiki/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86" target="_blank" rel="external">树的遍历</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2" target="_blank" rel="external">深度优先搜索</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2" target="_blank" rel="external">广度优先搜索</a></p>
+<h4 id="二叉树遍历"><a href="#二叉树遍历" class="headerlink" title="二叉树遍历"></a>二叉树遍历</h4><p>简单的二叉树结点类</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, value, left, right)</span>:</span></div><div class="line">        self.value = value</div><div class="line">        self.left = left</div><div class="line">        self.right = right</div></pre></td></tr></table></figure>
+<h5 id="中序遍历"><a href="#中序遍历" class="headerlink" title="中序遍历"></a>中序遍历</h5><p>遍历左子树，访问当前节点，遍历右子树</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">mid_travelsal</span><span class="params">(root)</span>:</span></div><div class="line">    <span class="keyword">if</span> root.left <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">None</span>:</div><div class="line">        mid_travelsal(root.left)</div><div class="line">    <span class="comment"># 处理当前节点</span></div><div class="line">    print(root.value)</div><div class="line">    <span class="keyword">if</span> root.right <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">None</span>:</div><div class="line">        mid_travelsal(root.right)</div></pre></td></tr></table></figure>
+<h5 id="前序遍历"><a href="#前序遍历" class="headerlink" title="前序遍历"></a>前序遍历</h5><p>访问当前节点，遍历左子树，遍历右子树</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">pre_travelsal</span><span class="params">(root)</span>:</span></div><div class="line">    <span class="comment"># 处理当前节点</span></div><div class="line">    print(root.value)</div><div class="line">    <span class="keyword">if</span> root.left <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">None</span>:</div><div class="line">        mid_travelsal(root.left)</div><div class="line">    <span class="keyword">if</span> root.right <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">None</span>:</div><div class="line">        mid_travelsal(root.right)</div></pre></td></tr></table></figure>
+<h5 id="后序遍历"><a href="#后序遍历" class="headerlink" title="后序遍历"></a>后序遍历</h5><p>遍历左子树，遍历右子树，访问当前节点</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">post_travelsal</span><span class="params">(root)</span>:</span></div><div class="line">    <span class="keyword">if</span> root.left <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">None</span>:</div><div class="line">        mid_travelsal(root.left)</div><div class="line">    <span class="keyword">if</span> root.right <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">None</span>:</div><div class="line">        mid_travelsal(root.right)</div><div class="line">    <span class="comment"># 处理当前节点</span></div><div class="line">    print(root.value)</div></pre></td></tr></table></figure>
+<h4 id="图的遍历"><a href="#图的遍历" class="headerlink" title="图的遍历"></a>图的遍历</h4><p>简单的图结点类</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, value, adjacent)</span>:</span></div><div class="line">        self.value = value</div><div class="line">        self.visit = <span class="keyword">False</span> <span class="comment"># 是否被遍历的状态</span></div><div class="line">        self.adjacent = adjacent <span class="comment"># 临接节点</span></div></pre></td></tr></table></figure>
+<h5 id="广度优先搜索-BFS"><a href="#广度优先搜索-BFS" class="headerlink" title="广度优先搜索 BFS"></a>广度优先搜索 BFS</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span><span class="params">(root)</span>:</span></div><div class="line">    node_queue = []</div><div class="line">    root.visit = <span class="keyword">True</span></div><div class="line">    print(root.value)</div><div class="line">    node_queue.append(root)</div><div class="line">    <span class="keyword">while</span> node_queue:</div><div class="line">        r = node_queue.pop(<span class="number">0</span>)</div><div class="line">    	<span class="keyword">for</span> node <span class="keyword">in</span> r.adjacent:</div><div class="line">            <span class="keyword">if</span> <span class="keyword">not</span> node.visit:</div><div class="line">            	print(node.value)</div><div class="line">    			node.visit = <span class="keyword">True</span></div><div class="line">                node_queue.append(node)</div></pre></td></tr></table></figure>
+<h5 id="深度优先搜索-DFS"><a href="#深度优先搜索-DFS" class="headerlink" title="深度优先搜索 DFS"></a>深度优先搜索 DFS</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span><span class="params">(root)</span>:</span></div><div class="line">    <span class="keyword">if</span> root <span class="keyword">is</span> <span class="keyword">None</span>:</div><div class="line">        <span class="keyword">return</span></div><div class="line">    print(root.value)</div><div class="line">    root.visit = <span class="keyword">True</span></div><div class="line">    <span class="keyword">for</span> node <span class="keyword">in</span> root.adjacent:</div><div class="line">        <span class="keyword">if</span> <span class="keyword">not</span> node.visit:</div><div class="line">        	dfs(node)</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -372,17 +364,13 @@ pyquery: 一个为 python 定制的 jquery-like 库">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/13/python-requests/" rel="next" title="Python Requests 学习手册">
-                <i class="fa fa-chevron-left"></i> Python Requests 学习手册
+              <a href="/2017/02/06/mongodb/" rel="next" title="MongoDB 操作手册">
+                <i class="fa fa-chevron-left"></i> MongoDB 操作手册
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/01/21/python-scrapy/" rel="prev" title="Scrapy 学习文档">
-                Scrapy 学习文档 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -408,8 +396,8 @@ pyquery: 一个为 python 定制的 jquery-like 库">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/01/13/python-pyquery/"
-           data-title="Python Pyquery 学习手册" data-url="http://yoursite.com/2017/01/13/python-pyquery/">
+      <div class="ds-thread" data-thread-key="2017/06/26/tree-and-graph/"
+           data-title="树的遍历图的遍历 in Python" data-url="http://yoursite.com/2017/06/26/tree-and-graph/">
       </div>
     
   </div>
@@ -518,7 +506,7 @@ pyquery: 一个为 python 定制的 jquery-like 库">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QuickStart"><span class="nav-number">2.</span> <span class="nav-text">QuickStart</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取属性"><span class="nav-number">3.</span> <span class="nav-text">获取属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作CSS"><span class="nav-number">4.</span> <span class="nav-text">操作CSS</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#二叉树遍历"><span class="nav-number">1.</span> <span class="nav-text">二叉树遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#中序遍历"><span class="nav-number">1.1.</span> <span class="nav-text">中序遍历</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#前序遍历"><span class="nav-number">1.2.</span> <span class="nav-text">前序遍历</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#后序遍历"><span class="nav-number">1.3.</span> <span class="nav-text">后序遍历</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图的遍历"><span class="nav-number">2.</span> <span class="nav-text">图的遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#广度优先搜索-BFS"><span class="nav-number">2.1.</span> <span class="nav-text">广度优先搜索 BFS</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#深度优先搜索-DFS"><span class="nav-number">2.2.</span> <span class="nav-text">深度优先搜索 DFS</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
